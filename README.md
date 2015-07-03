@@ -1,6 +1,8 @@
 # AngularAppPene
 School assignment for Serious Javascript
 
+READ THIS FIRST! - THE SONG PAGE SOMEHOW IS NOT WORKING PROPERLY IN CHROME, TURN OFF AUDIO TO PROTECT YOUR EARS!
+
 This app shows the abilities of Angular as a MV* framework.
 
 - It contains views for shows, videos, songs and partials for individual shows, the addition form for shows, a youtube player, a song player (doesn't work on Chrome somehow :S). 
