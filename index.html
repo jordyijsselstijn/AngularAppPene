@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Pene Corrida Archives</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+
+    <!--import stylesheets-->
+
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
+    <!--3rd party libraries-->
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="assets/libs/angular-ui-router.min.js"></script>
+
+    <!--<script src="assets/semantic/javascript/semantic.min.js"></script>-->
+    <script src="assets/semantic-ui/semantic.min.js"></script>
+    <script src="assets/libs/ng-YouTubeAPI.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+    <script src="//connect.soundcloud.com/sdk-2.0.0.js"></script>
+
+    <!--linking the actual app-->
+
+    <script src="app/app.js"></script>
+
+    <!--linking directives, added as modules-->
+
+    <script src="app/shared/show/showDirective.js"></script>
+    <script src="app/shared/side-bar/sidebar.js"></script>
+    <script src="app/shared/toolTip/toolTip.js"></script>
+    <script src="app/components/songs/songDirective.js"></script>
+    <script src="app/shared/player/playerDirective.js"></script>
+    <script src="app/shared/addShow/addShowDirective.js"></script>
+
+    <!--linking controllers-->
+
+    <script src="app/components/home/homeController.js"></script>
+    <script src="app/components/home/homeService.js"></script>
+    <script src="app/components/songs/songService.js"></script>
+    <script src="app/components/songs/SongsCtrl.js"></script>
+    <script src="app/components/videos/VideoCtrl.js"></script>
+
+    <script src="app/components/videos/videoService.js"></script>
+    <script src="app/shared/addShow/addShowService.js"></script>
+
+</head>
+<body  class="pusher">
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '986060144777446',
+            xfbml      : true,
+            version    : 'v2.3'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+    <player></player>
+    <side-bar></side-bar>
+            <div id="container">
+                <div ui-view ></div>
+            </div>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(../semantic-ui/semantic.min.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; }
+
+.ui.secondary.button.menuBtn {
+  margin-top: 75px;
+  border-radius: 0px;
+  background-color: #333; }
+
+#container {
+  width: 80%;
+  margin-top: 15px;
+  margin-left: 5%; }
+
+.add.button {
+  margin-bottom: 25px; }
+
+.individual {
+  background-color: lightgray;
+  display: inline-block; }
+
+.individual {
+  max-width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 290px;
+  min-height: 0;
+  background: #fff;
+  padding: 0;
+  border: none;
+  border-radius: .2857rem;
+  box-shadow: 0 3px 0 0 #d4d4d5,0 0 0 1px #d4d4d5;
+  -webkit-transition: box-shadow .2s ease;
+  transition: box-shadow .2s ease;
+  clear: left; }
+  .individual h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500; }
+  .individual img {
+    margin-left: 14%;
+    width: 70%;
+    max-width: 200px;
+    margin-right: 10px;
+    margin-bottom: 20px; }
+  .individual .show {
+    margin-top: 5px;
+    margin-left: 10px;
+    list-style: none;
+    font-weight: 200;
+    margin-bottom: 10px; }
+
+.show.date {
+  margin-left: 14%; }
+
+#map {
+  height: 350px;
+  width: 350px; }
+
+.ui.modal.showDetail {
+  height: 570px;
+  width: 900px; }
+
+.description.modalDes {
+  float: right; }
+
+.showData {
+  float: left; }
+  .showData span {
+    display: block; }
+  .showData img {
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 15px; }
+
+.ui.table.songTable {
+  width: 80%;
+  margin-left: 110px; }
+  .ui.table.songTable thead {
+    font-weight: 700; }
+  .ui.table.songTable i {
+    cursor: pointer; }
+
+.currentSong {
+  background-color: black;
+  color: white;
+  float: right;
+  position: fixed;
+  font-style: italic;
+  font-weight: 300;
+  width: 390px;
+  margin-left: 68%;
+  padding-left: 10px;
+  padding-bottom: 7px;
+  padding-top: 4px;
+  opacity: 1;
+  z-index: 10;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.wav {
+  height: 13px; }
+
+.video.frame {
+  z-index: 10; }
+
+.ui.list {
+  background-color: black;
+  list-style: none;
+  width: 200px;
+  height: 500px;
+  float: right;
+  margin-right: 40px;
+  margin-top: -502px;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
+  .ui.list .item {
+    cursor: pointer;
+    list-style: none;
+    color: lightgray;
+    padding-left: 10px; }
+  .ui.list .item:hover {
+    color: white; }
+
+.content .ui.form {
+  float: left; }
+.content .ui.form input {
+  display: inline;
+  width: 200px; }
+.content .ui.form label {
+  width: 200px; }
+
+.event.image #eventPic {
+  width: 70%; }
+
+.hidden {
+  opacity: 0;
+  visibility: hidden; }
+
+input.ng-dirty.ng-invalid {
+  background-color: rgba(255, 9, 0, 0.2); }
+
+.error {
+  background-color: rgba(255, 9, 0, 0.2); }
+
+.add.button {
+  cursor: pointer; }
+
+#foreign {
+  margin-top: -20px; }
+
+/*# sourceMappingURL=style.css.map */
