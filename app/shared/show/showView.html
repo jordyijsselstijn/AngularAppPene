@@ -1,0 +1,48 @@
+<i class="close icon" ng-click="destroyMap()"></i>
+    <div class="header">
+        {{show.name}}
+    </div>
+
+    <div class="content">
+
+        <div class="showData">
+
+        <img src="{{show.img}}">
+
+            <table class="ui table">
+
+                <tbody>
+                <tr>
+                    <td>Show date</td>
+                    <td>{{show.showDate}}</td>
+                </tr>
+                <tr>
+                    <td>Show time</td>
+                    <td>{{show.startTime}}</td>
+                </tr>
+                <tr>
+                    <td>Show end</td>
+                    <td>{{show.endTime}}</td>
+                </tr>
+                <tr>
+                    <td>Event link</td>
+                    <td><a href="{{show.link}}">{{show.name}}</a></td>
+                </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <div id="showDesc" class="description modalDes">
+            <div id='map'></div>
+        </div>
+
+    </div>
+
+    <div class="actions">
+        <div ng-click="destroyMap()" class="ui black button">
+            Close
+        </div>
+    </div>

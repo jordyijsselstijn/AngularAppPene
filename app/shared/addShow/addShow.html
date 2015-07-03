@@ -1,0 +1,72 @@
+<i class="close icon"></i>
+<div class="header">
+    Add a new show
+</div>
+<div class="content">
+
+    <form class="ui form" id="showForm" name="showForm" novalidate="novalidate">
+            <div class="field">
+                <label>Name</label>
+                <input type="text" name="showName" id="showName" ng-model="showToAdd.name" required>
+            </div>
+
+            <div class="field">
+                <label>Date</label>
+                <input type="text" name="showDate" id="showDate" placeholder="dd/mm/yyyy" ng-model="showToAdd.showDate" required>
+            </div>
+
+            <div class="field">
+                <label>Street Address</label>
+                <input type="text" name="street" id="streetAddress" ng-model="showToAdd.street" placeholder="streetname housenumber" ng-invalid="error" required>
+            </div>
+
+            <div class="field">
+                <label>City</label>
+                <input type="text" name="city" id="city" ng-model="showToAdd.city" placeholder="ex: Rotterdam"required>
+                </div>
+
+            <div class="field">
+                <label>Foreign Show</label>
+                <input type="checkbox" name="foreign" id="foreign" ng-model="showToAdd.isForeign">
+                </div>
+
+            <div ng-show="showToAdd.isForeign" class="field">
+                <label>Country</label>
+                <input type="text" name="country" id="country" ng-model="showToAdd.country" placeholder="full country name" >
+            </div>
+
+            <div class="field">
+                <label>Showtime</label>
+                <input type="text" name="showTime" id="showTime" ng-model="showToAdd.showTime" placeholder="hh:mm:ss" required>
+            </div>
+
+            <div class="field">
+                <label>Show end</label>
+                <input type="text" name="showEnd" id="showEnd" ng-model="showToAdd.showEnd" placeholder="hh:mm:ss" required>
+            </div>
+
+            <div class="field">
+                <label>Hyperlink</label>
+                <input type="text" name="showLink" id="showLink" placeholder="Paste facebook event link here" ng-model="showToAdd.link" required>
+                <div  class="ui green button" ng-show="showToAdd.link" ng-click="pullFBPic()">
+                    Check Event Picture
+                </div>
+            </div>
+
+        </form>
+
+        <div class="event image" ng-show="showToAdd.link">
+            <img id="eventPic" src="">
+        </div>
+</div>
+
+<div class="actions">
+
+    <div  class="ui green button" ng-click="sendForm()">
+        Add
+    </div>
+
+    <div  class="ui black button" >
+        Cancel
+    </div>
+</div>

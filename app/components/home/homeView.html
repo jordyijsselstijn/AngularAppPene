@@ -1,0 +1,23 @@
+<h1 class="ui header">Shows from Pene Corrida</h1>
+
+
+<div ng-click="addForm(this)" class="add button">
+
+    <i class="ui add icon"></i><span>Add a show</span>
+
+</div>
+<div class="ui grid">
+<div ng-repeat="show in shows"  class="four wide column">
+
+    <div ng-click="selectedEl(this)" tool-tip class="individual" data-content="{{show.name}}">
+        <span class="ui popup">Test</span>
+        <h3>{{show.name}}</h3>
+        <img  src="{{show.img}}">
+        <ul>
+            <li class="show date">Date: {{show.showDate}}</li>
+        </ul>
+    </div>
+</div>
+</div>
+<div show class="ui modal showDetail"></div>
+<div add-show class="ui modal addShow"></div>

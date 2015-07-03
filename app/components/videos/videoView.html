@@ -1,0 +1,9 @@
+<h1 class="ui header">Video's by Pene Corrida</h1>
+
+<div class="video module">
+    <div class="video frame" data-yt-player="myPlayer" data-yt-vid="lLw22xgTZxA" data-yt-playervars="{'modestbranding': 1}"></div>
+
+    <div class="ui list video list">
+        <div ng-repeat="video in videos" data-yt-videoName="{{video.name}}" data-yt-playto="myPlayer" data-yt-vid="{{video.id}}"></div>
+    </div>
+</div>
