@@ -1,0 +1,37 @@
+[
+  {
+    "id" : 1,
+    "name": "Strudelfest",
+    "payment" : "online",
+    "status" : 0,
+    "payout" : 600
+  },
+  {
+    "id" : 2,
+    "name": "Tinte Zomerfeesten",
+    "payment" : "online",
+    "status" : 0,
+    "payout" : 100
+  },
+  {
+    "id" : 3,
+    "name": "Rotorock",
+    "payment" : "online",
+    "status" : 0,
+    "payout" : 800
+  },
+  {
+    "id" : 4,
+    "name": "Baroeg Open-air",
+    "payment" : "online",
+    "status" : 0,
+    "payout" : 500
+  },
+  {
+    "id" : 5,
+    "name": "Dieksiepop",
+    "payment" : "online",
+    "status" : 0,
+    "payout" : 400
+  }
+]
